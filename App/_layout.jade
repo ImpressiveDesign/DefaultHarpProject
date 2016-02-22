@@ -1,0 +1,14 @@
+doctype
+html
+  head
+    title #{pageTitle} | #{siteTitle}
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=divice-width, initial-scale=1')
+    link(rel='shortcut icon', href='')    
+    link(rel="stylesheet" href="assets/css/main.css")
+  body
+  
+    != partial("_includes/_test")
+    != yield
+    script(src='assets/js/jquery-2.1.4.min.js')
+    script(src='assets/js/functions.js', type='text/javascript')
